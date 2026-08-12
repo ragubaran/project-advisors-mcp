@@ -1,0 +1,29 @@
+{
+  "name": "project-advisors-mcp",
+  "version": "1.0.0",
+  "description": "MCP Design & Diagnostic Advisor Server",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "mcp",
+    "advisor",
+    "architecture",
+    "security"
+  ],
+  "author": "ragubaran",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
