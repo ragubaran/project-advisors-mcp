@@ -7,6 +7,12 @@ export const vulnerabilitiesAdvisorDef = {
       manifestPath: { type: "string" }
     },
   },
+  annotations: {
+    readOnlyHint: true,
+    destructiveHint: false,
+    idempotentHint: true,
+    openWorldHint: true,
+  },
 };
 
 export async function runVulnerabilitiesAdvisor(args: any) {

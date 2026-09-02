@@ -10,6 +10,12 @@ export const restApiAdvisorDef = {
       strictMode: { type: "boolean", default: true }
     },
   },
+  annotations: {
+    readOnlyHint: true,
+    destructiveHint: false,
+    idempotentHint: true,
+    openWorldHint: false,
+  },
 };
 
 export async function runRestApiAdvisor(args: any) {

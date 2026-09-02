@@ -8,6 +8,12 @@ export const telemetryAdvisorDef = {
       severity: { type: "string", enum: ["INFO", "WARN", "ERROR", "CRITICAL"] }
     },
   },
+  annotations: {
+    readOnlyHint: true,
+    destructiveHint: false,
+    idempotentHint: false,
+    openWorldHint: true,
+  },
 };
 
 export async function runTelemetryAdvisor(args: any) {

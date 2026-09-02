@@ -10,6 +10,12 @@ export const architectureAdvisorDef = {
       pattern: { type: "string", enum: ["layered", "hexagonal", "clean", "mvvm", "compose"], default: "layered" },
     },
   },
+  annotations: {
+    readOnlyHint: true,
+    destructiveHint: false,
+    idempotentHint: true,
+    openWorldHint: false,
+  },
 };
 
 export async function runArchitectureAdvisor(args: any) {

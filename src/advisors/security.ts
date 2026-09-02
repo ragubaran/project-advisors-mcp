@@ -8,6 +8,12 @@ export const securityAdvisorDef = {
       scanConfig: { type: "boolean", default: true }
     },
   },
+  annotations: {
+    readOnlyHint: true,
+    destructiveHint: false,
+    idempotentHint: true,
+    openWorldHint: false,
+  },
 };
 
 export async function runSecurityAdvisor(args: any) {
